@@ -64,8 +64,3 @@ If I use Hard Assert and catch the exception then the suite will be stopped afte
 <p> If you want to continue until end of the test method to invoke your verification then initialize SoftAssert in your scriptbase and distribute that instance through out the all Scripts since Scriptbase will be inherited. Remember: Each Test methods is a TestCase and Each Java Class is a Use Case. This is little different than the way we are worked in RFT.
 
 Thats all for the Assertion with TestNG.. 
-
-
-
-
-or i can use Soft Assert and call **assertAll()** at the end.
