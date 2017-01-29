@@ -61,7 +61,7 @@ The above is called **Hard Assert**. Meaning it will throws an exception and als
 </P>
 **<u>How will you implement Assert to your Scripts through out the project? </u>**
 If I use Hard Assert and catch the exception then the suite will be stopped after throwing that exception. If it happens in the first assert in the test method then none of the assert will not be executed in that method and script will be stopped after throwing the exception. Here is another interesting is if you catch that exception then in the console you will see it fails but in the test result you will see it passes.
-![assertrycatch.png](/uploads/assertrycatch.png) 
+![assertrycatch.png]({{https://minhazq.github.io/testng-jekyll}}/uploads/assertrycatch.png) 
 
 
 
