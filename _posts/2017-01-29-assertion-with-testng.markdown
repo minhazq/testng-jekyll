@@ -4,19 +4,12 @@ date: 2017-01-29 11:25:00 -05:00
 ---
 
 All assert is the part of **org.testng.Assert** class. All assert will throw an **java.lang.AssertionError**. We can verify the following using one override methods "assertEqual(data,data,String fail message)".
-<p><li>
-
-1. All primitive
-
-2. String
-
-3. array
-
-4. Collections
-
-5. Iterable object
-
-6. boolean </li></P>
+<p><li>All primitive</li>
+<li>String</li>
+<li>array</li>
+<li>Collections</li>
+<li>Iterable object</li>
+<li>boolean </li></P>
 <p>
 <pre style='color:#000000;background:#ffffff;'><span style='color:#800000; font-weight:bold; '>package</span><span style='color:#004a43; '> mq</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>demo</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>selenium</span><span style='color:#800080; '>;</span>
    <span style='color:#800000; font-weight:bold; '>import</span><span style='color:#004a43; '> org</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>testng</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>Assert</span><span style='color:#800080; '>;</span>
