@@ -46,7 +46,7 @@ All assert is the part of **org.testng.Assert** class. All assert will throw an 
 <span style='color:#800080; '>}</span>
 </pre>
 </P>
-The above is called **Hard Assert**. Meaning it will throws an exception and also terminate the execution of the test. In some case you need to keep going. In that case you need use \*\*<u>org.testng.asserts.SoftAssert</U> \*\*. In order to create an instance of soft assert you have to do the following:
+The above is called **Hard Assert**. Meaning it will throws an exception and also terminate the execution of the test. In some case you need to keep going. In that case you need use **<u>org.testng.asserts.SoftAssert</u>**. In order to create an instance of soft assert you have to do the following:
 <p>
 <pre style='color:#000000;background:#ffffff;'><span style='color:#800000; font-weight:bold; '>package</span><span style='color:#004a43; '> mq</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>demo</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>selenium</span><span style='color:#800080; '>;</span>
 <span style='color:#800000; font-weight:bold; '>import</span><span style='color:#004a43; '> org</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>testng</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>annotations</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>Test</span><span style='color:#800080; '>;</span>
