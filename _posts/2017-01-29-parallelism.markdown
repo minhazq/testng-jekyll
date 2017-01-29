@@ -20,6 +20,6 @@ In TestNG There is two main way you can make your Test methods , Test classes ru
 <span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>suite</span><span style='color:#a65700; '>></span>
 </pre>
 </p>
-
+If you want to execute each **class** parallel then change the "methods" to "classes". Notice that both of them are plural. 
 </p>
 </p>
