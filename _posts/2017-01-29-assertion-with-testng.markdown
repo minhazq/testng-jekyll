@@ -70,5 +70,5 @@ The above is called **Hard Assert**. Meaning it will throws an exception and als
 </pre>
 </P>
 **<u>How will you implement Assert to your Scripts through out the project? </u>**
-<p>The idea is 
+<p>The main idea is i can use Hard Assert and catch the exception or i can use Soft Assert and call **assertAll()** at the end. 
 </p>
