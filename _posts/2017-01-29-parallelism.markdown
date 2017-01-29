@@ -7,7 +7,7 @@ In TestNG There is two main way you can make your Test methods , Test classes ru
 <p>1. Defining in <u>testng.xml</u> file</p>
 <p>2. Defining in <u>annotation</u> right above in test methods.</p>
 <p>
-<u>**xml way**<u>
+<u>**xml way**</u>
 <p>the following will run each test methods in different thread or the amount threads that you assigned.
 <p>
 <pre style='color:#000000;background:#ffffff;'><span style='color:#004a43; '>&lt;!</span><span style='color:#800000; font-weight:bold; '>DOCTYPE</span> <span style='color:#bb7977; font-weight:bold; '>suite</span> <span style='color:#004a43; '>SYSTEM</span> <span style='color:#800000; '>"</span><span style='color:#666616; '>http</span><span style='color:#800080; '>:</span><span style='color:#800000; font-weight:bold; '>//</span><span style='color:#5555dd; '>testng.org</span><span style='color:#40015a; '>/testng-1.0.dtd</span><span style='color:#800000; '>"</span><span style='color:#004a43; '>></span>
