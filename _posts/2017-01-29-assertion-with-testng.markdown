@@ -69,6 +69,6 @@ The above is called **Hard Assert**. Meaning it will throws an exception and als
 <span style='color:#800080; '>}</span>
 </pre>
 </P>
-\*\*<u>How will you implement Assert to your Scripts through out the project? </u> \*\*
+**<u>How will you implement Assert to your Scripts through out the project? </u>**
 <p>The idea is 
 </p>
