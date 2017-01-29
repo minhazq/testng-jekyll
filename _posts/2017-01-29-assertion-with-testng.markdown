@@ -60,8 +60,10 @@ The above is called **Hard Assert**. Meaning it will throws an exception and als
 </pre>
 </P>
 **<u>How will you implement Assert to your Scripts through out the project? </u>**
-If I use Hard Assert and catch the exception then the suite will be stopped after throwing that exception. If it happens in the first assert in the test method then none of the assert will not be executed in that method and script will be stopped after throwing the exception. Here is another interesting is if you catch that exception then in the console you will see it fails but in the test result you will see it passes.
-![assertrycatch.png](/uploads/assertrycatch.png) 
+If I use Hard Assert and catch the exception then the suite will be stopped after throwing that exception. If it happens in the first assert in the test method then none of the assert will not be executed in that method and script will be stopped after throwing the exception. Here is another interesting is if you catch that exception then in the console you will see it fails but in the test result you will see it passes. In that case in the exception you call Assert.fail() directly to see the fail not only the console but in the result as well.
+<p> If you want to continue until end of the test method to invoke your verification then initialize SoftAssert in your scriptbase and distribute that instance through out the all Scripts since Scriptbase will be inherited. Remember: Each Test methods is a TestCase and Each Java Class is a Use Case. This is little different than the way we are worked in RFT.
+
+Thats all for the Assertion with TestNG.. 
 
 
 
