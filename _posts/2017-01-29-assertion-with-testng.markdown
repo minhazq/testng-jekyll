@@ -31,3 +31,4 @@ All assert is the part of **org.testng.Assert** class. All assert will throw an 
 <span style='color:#800080; '>}</span>
 </pre>
 </P>
+<p> The above is called **Hard Assert**. Meaning it will throws an exception and also terminate the execution of the test. In some case you need to keep going. In that case you need use **org.testng.asserts.SoftAssert**. In order to create an instance of soft assert you have to do the following:</P>
