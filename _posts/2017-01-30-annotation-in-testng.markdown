@@ -15,7 +15,7 @@ date: 2017-01-30 15:53:00 -05:00
 <p>These annotated methods are executed before/ after the execution of each test method.</p>
 **@DataProvider**
 <p>Marks a method as a data providing method for a test method. The said method has to return an Object double array (Object[ ][ ]) as data.</p>
-<p>@Factory</p>
+**@Factory**
 <p> Marks a annotated method as a factory that returns an array of class objects (Object[ ]). These class objects will then be used as test classes by TestNG. This is used to run a set of test cases with different values.</P>
 <p>@Listeners</P>
 <p> Applied on a test class. Defines an array of test listeners classes extending org.testng.ITestNGListener. Helps in tracking the execution status and logging purpose.</p>
