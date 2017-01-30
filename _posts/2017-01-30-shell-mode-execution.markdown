@@ -17,3 +17,25 @@ Here is the testNG.xml to execute the scripts in shell mode.
   <span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>test</span><span style='color:#a65700; '>></span>
 <span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>suite</span><span style='color:#a65700; '>></span>
 </pre>
+<p> Another attribute "parameter" has been added and named it "shell" set the value true. Notice that i have retrieve that value in my @BeforeClass. In the following @Optional means default value if the shell is not set. Based on shell value i setup my @AfterClass. Remember the idea is every methods should be independent. Meaning every method execution browser should open and also browser should be closed. If in any case you dont want to close the browser during shell mode execution you can follow this pattern.
+</p>
+<pre style='color:#000000;background:#ffffff;'>@BeforeClass
+	@Parameters(<span style='color:#800080; '>{</span> <span style='color:#0000e6; '>"shell"</span><span style='color:#800080; '>}</span>)
+	<span style='color:#800000; font-weight:bold; '>public</span> void beforeClass(@Optional("false") boolean shellValue)<span style='color:#800080; '>{</span>
+		isShell <span style='color:#808030; '>=</span> shellValue<span style='color:#800080; '>;</span>
+		<span style='color:#bb7977; font-weight:bold; '>System</span><span style='color:#808030; '>.</span>out<span style='color:#808030; '>.</span>println<span style='color:#808030; '>(</span><span style='color:#0000e6; '>"Shell mode : "</span> <span style='color:#808030; '>+</span> shellValue<span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+		driver <span style='color:#808030; '>=</span> <span style='color:#800000; font-weight:bold; '>new</span> FirefoxDriver<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+		driver<span style='color:#808030; '>.</span>get<span style='color:#808030; '>(</span><span style='color:#0000e6; '>"http://www.bn.com"</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+	<span style='color:#800080; '>}</span>
+	
+	
+	@AfterClass
+	<span style='color:#800000; font-weight:bold; '>public</span> void afterClass()<span style='color:#800080; '>{</span>
+		<span style='color:#800000; font-weight:bold; '>if</span><span style='color:#808030; '>(</span>driver<span style='color:#808030; '>!</span><span style='color:#808030; '>=</span><span style='color:#800000; font-weight:bold; '>null</span><span style='color:#808030; '>)</span><span style='color:#800080; '>{</span>
+			<span style='color:#800000; font-weight:bold; '>if</span><span style='color:#808030; '>(</span>isShell<span style='color:#808030; '>)</span><span style='color:#800080; '>{</span>
+				driver<span style='color:#808030; '>.</span>close<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+				driver<span style='color:#808030; '>.</span>quit<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+			<span style='color:#800080; '>}</span>
+		<span style='color:#800080; '>}</span>
+	<span style='color:#800080; '>}</span>
+</pre> 
