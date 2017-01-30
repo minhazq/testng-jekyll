@@ -14,4 +14,21 @@ In the case of Class level DataProvider you must add "dataProviderClass=yourClas
 		
 	<span style='color:#800080; '>}</span>
 </pre>
+Here is the example for DataProvider Class:
+<pre style='color:#000000;background:#ffffff;'><span style='color:#800000; font-weight:bold; '>package</span><span style='color:#004a43; '> mq</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>demo</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>selenium</span><span style='color:#800080; '>;</span>
+
+<span style='color:#800000; font-weight:bold; '>import</span><span style='color:#004a43; '> org</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>testng</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>annotations</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>DataProvider</span><span style='color:#800080; '>;</span>
+
+<span style='color:#800000; font-weight:bold; '>public</span> <span style='color:#800000; font-weight:bold; '>class</span> DataproviderClass <span style='color:#800080; '>{</span>
+
+	
+	<span style='color:#696969; '>//Has to be delceared as static and must return and two dimensional array</span>
+		<span style='color:#808030; '>@</span>DataProvider<span style='color:#808030; '>(</span>name<span style='color:#808030; '>=</span><span style='color:#0000e6; '>"my-data-provider"</span><span style='color:#808030; '>)</span>
+		<span style='color:#800000; font-weight:bold; '>public</span> <span style='color:#800000; font-weight:bold; '>static</span> <span style='color:#bb7977; font-weight:bold; '>Object</span><span style='color:#808030; '>[</span><span style='color:#808030; '>]</span><span style='color:#808030; '>[</span><span style='color:#808030; '>]</span> dataProviderMethod<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#800080; '>{</span>
+			<span style='color:#800000; font-weight:bold; '>return</span> <span style='color:#800000; font-weight:bold; '>new</span> <span style='color:#bb7977; font-weight:bold; '>Object</span><span style='color:#808030; '>[</span><span style='color:#808030; '>]</span><span style='color:#808030; '>[</span><span style='color:#808030; '>]</span> <span style='color:#800080; '>{</span><span style='color:#800080; '>{</span><span style='color:#0000e6; '>"data One"</span><span style='color:#800080; '>}</span><span style='color:#808030; '>,</span><span style='color:#800080; '>{</span><span style='color:#0000e6; '>"data two"</span><span style='color:#800080; '>}</span><span style='color:#800080; '>}</span><span style='color:#800080; '>;</span>	
+		<span style='color:#800080; '>}</span>
+		
+		
+<span style='color:#800080; '>}</span>
+</pre>
  
