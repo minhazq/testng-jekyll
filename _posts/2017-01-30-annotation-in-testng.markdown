@@ -17,11 +17,11 @@ date: 2017-01-30 15:53:00 -05:00
 <p>Marks a method as a data providing method for a test method. The said method has to return an Object double array (Object[ ][ ]) as data.</p>
 **@Factory**
 <p> Marks a annotated method as a factory that returns an array of class objects (Object[ ]). These class objects will then be used as test classes by TestNG. This is used to run a set of test cases with different values.</P>
-<p>@Listeners</P>
+**@Listeners**
 <p> Applied on a test class. Defines an array of test listeners classes extending org.testng.ITestNGListener. Helps in tracking the execution status and logging purpose.</p>
-<p>@Parameters</p>
+**@Parameters**
 <p> This annotation is used to pass parameters to a test method. These parameter values are provided using the testng.xml configuration file at runtime.</p>
-<p>@Test</p>
+**@Test**
 <p> Marks a class or a method as a test method. If used at class level, all the public methods of a class will be considered as a test method. </p>  
     
 
