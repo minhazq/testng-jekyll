@@ -11,9 +11,9 @@ date: 2017-01-30 15:53:00 -05:00
 <p>These annotations are associated with the groups feature in TestNG. BeforeGroups annotated method will run before any of the test method of the specified group is executed. AfterGroups annotated method will run after any of the test method of the specified group gets executed. For this method to be executed, the user has to mention the list of groups this method belongs to using groups attribute with the said annotation. You can specify more than multiple groups if required.</p>
 **@BeforeClass or @AfterClass**
 <p>BeforeClass annotated method is executed before any of the test method of a test class. AfterClass annotated method is executed after the execution of every test methods of a test class are executed.</p>
-<p>@BeforeMethod or @AfterMethod</p>
+**@BeforeMethod or @AfterMethod**
 <p>These annotated methods are executed before/ after the execution of each test method.</p>
-<p>@DataProvider</p>
+**@DataProvider**
 <p>Marks a method as a data providing method for a test method. The said method has to return an Object double array (Object[ ][ ]) as data.</p>
 <p>@Factory</p>
 <p> Marks a annotated method as a factory that returns an array of class objects (Object[ ]). These class objects will then be used as test classes by TestNG. This is used to run a set of test cases with different values.</P>
