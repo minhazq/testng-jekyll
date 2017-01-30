@@ -5,7 +5,7 @@ date: 2017-01-30 15:53:00 -05:00
 
 **@BeforeSuite or @AfterSuite:**
 <p>The annotated method will be executed before and after any tests declared inside a TestNG suite.</p>
-<p>@BeforeTest or @AfterTest</p>
+**<p>@BeforeTest or @AfterTest</p>**
 <p>The annotated methods will be executed before and after each test section declared inside a TestNG suite</p>
 <p>@BeforeGroups or @AfterGroups</p>
 <p>These annotations are associated with the groups feature in TestNG. BeforeGroups annotated method will run before any of the test method of the specified group is executed. AfterGroups annotated method will run after any of the test method of the specified group gets executed. For this method to be executed, the user has to mention the list of groups this method belongs to using groups attribute with the said annotation. You can specify more than multiple groups if required.</p>
