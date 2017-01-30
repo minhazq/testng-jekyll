@@ -3,7 +3,7 @@ title: Annotation in TestNG
 date: 2017-01-30 15:53:00 -05:00
 ---
 
-@BeforeSuite or @AfterSuite:
+**@BeforeSuite or @AfterSuite:**
 <p>The annotated method will be executed before and after any tests declared inside a TestNG suite.</p>
 <p>@BeforeTest or @AfterTest</p>
 <p>The annotated methods will be executed before and after each test section declared inside a TestNG suite</p>
