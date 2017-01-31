@@ -10,5 +10,3 @@ Factory: A factory will execute all the test methods present inside a test class
 TestNG factory is used to create instances of test classes dynamically. This is useful if you want to run the test class any number of times. For example, if you have a test to login into a site and you want to run this test multiple times,then its easy to use TestNG factory where you create multiple instances of test class and run the tests (may be to test any memory leak issues).
 
 Whereas, dataprovider is used to provide parameters to a test. If you provide dataprovider to a test, the test will be run taking different sets of value each time. This is useful for a scenario like where you want to login into a site with different sets of username and password each time.
-
-Let’s create an example that shows the clear difference between these two.
