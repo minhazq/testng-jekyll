@@ -48,3 +48,20 @@ For implementing a listener class, the class has to implement the org.testng.ITe
 
 <span style='color:#800080; '>}</span>
 </pre>
+Whatever methods have ITestContext as a parameter those are related with xml suite file. As you see **onStart** and **onFinished** both are called when xml suite start and xml suite finish. Rest of the methods called right after as the name suggest. 
+<p>What do i have to do in Script side?</p>
+You dont have to do anything in the script side. But in XML side you have to do something. You have to add <Listners> and then <Listner> (Without s) have to add. See the following:
+<pre style='color:#000000;background:#ffffff;'><span style='color:#004a43; '>&lt;!</span><span style='color:#800000; font-weight:bold; '>DOCTYPE</span> <span style='color:#bb7977; font-weight:bold; '>suite</span> <span style='color:#004a43; '>SYSTEM</span> <span style='color:#800000; '>"</span><span style='color:#666616; '>http</span><span style='color:#800080; '>:</span><span style='color:#800000; font-weight:bold; '>//</span><span style='color:#5555dd; '>testng.org</span><span style='color:#40015a; '>/testng-1.0.dtd</span><span style='color:#800000; '>"</span> <span style='color:#004a43; '>></span>
+<span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>suite</span> <span style='color:#274796; '>name</span><span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>test</span><span style='color:#800000; '>"</span><span style='color:#a65700; '>></span>
+	<span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>listeners</span><span style='color:#a65700; '>></span>
+		<span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>listener</span> <span style='color:#274796; '>class-name</span><span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '> mq.demo.selenium_testng.Listners</span><span style='color:#800000; '>"</span><span style='color:#a65700; '>/></span>
+	<span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>listeners</span><span style='color:#a65700; '>></span>
+	
+	<span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>test</span> <span style='color:#274796; '>name</span> <span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>listner test</span><span style='color:#800000; '>"</span><span style='color:#a65700; '>></span>
+	<span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>classes</span><span style='color:#a65700; '>></span>
+		 <span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>class</span> <span style='color:#274796; '>name</span><span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>mq.demo.selenium_testng.AppTest</span><span style='color:#800000; '>"</span><span style='color:#a65700; '>/></span>
+	<span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>classes</span><span style='color:#a65700; '>></span>	
+	<span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>test</span><span style='color:#a65700; '>></span>
+
+<span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>suite</span><span style='color:#a65700; '>></span>
+</pre>
