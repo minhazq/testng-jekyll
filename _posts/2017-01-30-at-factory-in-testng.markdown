@@ -22,3 +22,8 @@ date: 2017-01-30 22:41:00 -05:00
 	<span style='color:#800080; '>}</span>
 <span style='color:#800080; '>}</span>
 </pre> 
+To use @Factory you have to do the following: 
+<ul>
+<li> Create a separate Class</li>
+<li> Create a method which has a return of Object[]. Create new instance of your Script class with different parameter .
+</ul>
