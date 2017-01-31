@@ -28,3 +28,4 @@ To use @Factory you have to do the following:
 <li> Create a method which has a return of Object[]. Create new instance of your Script class with different parameter .</li>
 <li> Execute Factory class , which will run your Scripts class</li>
 </ul>
+Can you tell me what is the difference between @Factory and @Dataprovider?  Remember both used for multiple data to be executed the same script?
