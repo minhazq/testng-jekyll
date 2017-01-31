@@ -3,7 +3,7 @@ title: "@Factory in TestNG"
 date: 2017-01-30 22:41:00 -05:00
 ---
 
-@Factory annotation is used to execute same set of methods execute with different data.
+@Factory annotation is used to execute same set of methods execute with different data. Lets say i have a Script that printouts numbers with different set of numbers. So i need to run this same script with different parameter. One way you can use dataprovider and return Object[][] of the dataprovider method , based on how many data are there , it will execute. 2nd Option is use @Factory.
 <pre style='color:#000000;background:#ffffff;'><span style='color:#800000; font-weight:bold; '>package</span><span style='color:#004a43; '> mq</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>demo</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>selenium_testng</span><span style='color:#800080; '>;</span>
 
 <span style='color:#800000; font-weight:bold; '>import</span><span style='color:#004a43; '> org</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>testng</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>annotations</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>Test</span><span style='color:#800080; '>;</span>
