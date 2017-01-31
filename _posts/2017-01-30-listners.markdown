@@ -4,3 +4,47 @@ date: 2017-01-30 23:37:00 -05:00
 ---
 
 For implementing a listener class, the class has to implement the org.testng.ITestListener interface. These classes are notified at runtime by TestNG when the test **starts**, **finishes**, **fails**, **skips**, or **passes**.
+<pre style='color:#000000;background:#ffffff;'><span style='color:#800000; font-weight:bold; '>package</span><span style='color:#004a43; '> mq</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>demo</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>selenium_testng</span><span style='color:#800080; '>;</span>
+
+<span style='color:#800000; font-weight:bold; '>import</span><span style='color:#004a43; '> org</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>testng</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>ITestContext</span><span style='color:#800080; '>;</span>
+<span style='color:#800000; font-weight:bold; '>import</span><span style='color:#004a43; '> org</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>testng</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>ITestResult</span><span style='color:#800080; '>;</span>
+
+<span style='color:#800000; font-weight:bold; '>public</span> <span style='color:#800000; font-weight:bold; '>class</span> Listners <span style='color:#800000; font-weight:bold; '>implements</span> org.testng.ITestListener<span style='color:#800080; '>{</span>
+
+	<span style='color:#800000; font-weight:bold; '>public</span> <span style='color:#bb7977; '>void</span> onFinish<span style='color:#808030; '>(</span>ITestContext arg0<span style='color:#808030; '>)</span> <span style='color:#800080; '>{</span>
+		<span style='color:#696969; '>// </span><span style='color:#ffffff; background:#808000; '>TODO Auto-generated method stub</span>
+		
+	<span style='color:#800080; '>}</span>
+
+	<span style='color:#800000; font-weight:bold; '>public</span> <span style='color:#bb7977; '>void</span> onStart<span style='color:#808030; '>(</span>ITestContext arg0<span style='color:#808030; '>)</span> <span style='color:#800080; '>{</span>
+		<span style='color:#696969; '>// </span><span style='color:#ffffff; background:#808000; '>TODO Auto-generated method stub</span>
+		
+	<span style='color:#800080; '>}</span>
+
+	<span style='color:#800000; font-weight:bold; '>public</span> <span style='color:#bb7977; '>void</span> onTestFailedButWithinSuccessPercentage<span style='color:#808030; '>(</span>ITestResult arg0<span style='color:#808030; '>)</span> <span style='color:#800080; '>{</span>
+		<span style='color:#696969; '>// </span><span style='color:#ffffff; background:#808000; '>TODO Auto-generated method stub</span>
+		
+	<span style='color:#800080; '>}</span>
+
+	<span style='color:#800000; font-weight:bold; '>public</span> <span style='color:#bb7977; '>void</span> onTestFailure<span style='color:#808030; '>(</span>ITestResult arg0<span style='color:#808030; '>)</span> <span style='color:#800080; '>{</span>
+		<span style='color:#696969; '>// </span><span style='color:#ffffff; background:#808000; '>TODO Auto-generated method stub</span>
+		
+	<span style='color:#800080; '>}</span>
+
+	<span style='color:#800000; font-weight:bold; '>public</span> <span style='color:#bb7977; '>void</span> onTestSkipped<span style='color:#808030; '>(</span>ITestResult arg0<span style='color:#808030; '>)</span> <span style='color:#800080; '>{</span>
+		<span style='color:#696969; '>// </span><span style='color:#ffffff; background:#808000; '>TODO Auto-generated method stub</span>
+		
+	<span style='color:#800080; '>}</span>
+
+	<span style='color:#800000; font-weight:bold; '>public</span> <span style='color:#bb7977; '>void</span> onTestStart<span style='color:#808030; '>(</span>ITestResult arg0<span style='color:#808030; '>)</span> <span style='color:#800080; '>{</span>
+		<span style='color:#696969; '>// </span><span style='color:#ffffff; background:#808000; '>TODO Auto-generated method stub</span>
+		
+	<span style='color:#800080; '>}</span>
+
+	<span style='color:#800000; font-weight:bold; '>public</span> <span style='color:#bb7977; '>void</span> onTestSuccess<span style='color:#808030; '>(</span>ITestResult arg0<span style='color:#808030; '>)</span> <span style='color:#800080; '>{</span>
+		<span style='color:#696969; '>// </span><span style='color:#ffffff; background:#808000; '>TODO Auto-generated method stub</span>
+		
+	<span style='color:#800080; '>}</span>
+
+<span style='color:#800080; '>}</span>
+</pre>
