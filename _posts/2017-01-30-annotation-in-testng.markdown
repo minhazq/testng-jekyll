@@ -22,7 +22,8 @@ date: 2017-01-30 15:53:00 -05:00
 **@Parameters**
 <p> This annotation is used to pass parameters to a test method. These parameter values are provided using the testng.xml configuration file at runtime.</p>
 **@Test**
-<p> Marks a class or a method as a test method. If used at class level, all the public methods of a class will be considered as a test method. </p>  
+<p> Marks a class or a method as a test method. If used at class level, all the public methods of a class will be considered as a test method. </p>
+  
     
 
   
