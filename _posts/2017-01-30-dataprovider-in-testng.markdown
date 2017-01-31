@@ -1,5 +1,5 @@
 ---
-title: DataProvider in TestNG
+title: "@DataProvider in TestNG"
 date: 2017-01-30 16:28:00 -05:00
 ---
 
