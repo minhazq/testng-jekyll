@@ -25,5 +25,6 @@ date: 2017-01-30 22:41:00 -05:00
 To use @Factory you have to do the following: 
 <ul>
 <li> Create a separate Class</li>
-<li> Create a method which has a return of Object[]. Create new instance of your Script class with different parameter .
+<li> Create a method which has a return of Object[]. Create new instance of your Script class with different parameter .</li>
+<li> Execute Factory class , which will run your Scripts class</li>
 </ul>
