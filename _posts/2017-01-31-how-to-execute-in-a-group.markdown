@@ -94,3 +94,31 @@ Now how to run them? This time your group tag will go inside the "Test" tag inst
 <span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>test</span><span style='color:#a65700; '>></span>
 <span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>suite</span><span style='color:#a65700; '>></span>
 </pre>
+How to Exclude a group? As you imagine simply instead of include tag add "exclude" tag. Here is the example:
+<pre style='color:#000000;background:#ffffff;'><span style='color:#004a43; '>&lt;!</span><span style='color:#800000; font-weight:bold; '>DOCTYPE</span> <span style='color:#bb7977; font-weight:bold; '>suite</span> <span style='color:#004a43; '>SYSTEM</span> <span style='color:#800000; '>"</span><span style='color:#666616; '>http</span><span style='color:#800080; '>:</span><span style='color:#800000; font-weight:bold; '>//</span><span style='color:#5555dd; '>testng.org</span><span style='color:#40015a; '>/testng-1.0.dtd</span><span style='color:#800000; '>"</span><span style='color:#004a43; '>></span>
+<span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>suite</span> <span style='color:#274796; '>name</span> <span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>My sutie</span><span style='color:#800000; '>"</span>  <span style='color:#a65700; '>></span>
+
+<span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>test</span> <span style='color:#274796; '>name</span> <span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>My Test1</span><span style='color:#800000; '>"</span> <span style='color:#a65700; '>></span>
+	<span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>groups</span><span style='color:#a65700; '>></span>
+		<span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>run</span><span style='color:#a65700; '>></span>
+			<span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>include</span> <span style='color:#274796; '>name</span><span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>prod</span><span style='color:#800000; '>"</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>include</span><span style='color:#a65700; '>></span>
+			<span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>exclude</span> <span style='color:#274796; '>name</span><span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>qa</span><span style='color:#800000; '>"</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>exclude</span><span style='color:#a65700; '>></span>
+		<span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>run</span><span style='color:#a65700; '>></span>
+	<span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>groups</span><span style='color:#a65700; '>></span>
+ <span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>classes</span><span style='color:#a65700; '>></span>
+	<span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>class</span> <span style='color:#274796; '>name</span><span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>mq.demo.selenium.AppTest</span><span style='color:#800000; '>"</span><span style='color:#a65700; '>/></span>
+ <span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>classes</span><span style='color:#a65700; '>></span>
+<span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>test</span><span style='color:#a65700; '>></span>
+
+<span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>test</span> <span style='color:#274796; '>name</span> <span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>My Test2</span><span style='color:#800000; '>"</span> <span style='color:#a65700; '>></span>
+	<span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>groups</span><span style='color:#a65700; '>></span>
+		<span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>run</span><span style='color:#a65700; '>></span>
+			<span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>include</span> <span style='color:#274796; '>name</span><span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>qa</span><span style='color:#800000; '>"</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>include</span><span style='color:#a65700; '>></span>
+		<span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>run</span><span style='color:#a65700; '>></span>
+	<span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>groups</span><span style='color:#a65700; '>></span>
+ <span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>classes</span><span style='color:#a65700; '>></span>
+	<span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>class</span> <span style='color:#274796; '>name</span><span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>mq.demo.selenium.AppTest</span><span style='color:#800000; '>"</span><span style='color:#a65700; '>/></span>
+ <span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>classes</span><span style='color:#a65700; '>></span>
+<span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>test</span><span style='color:#a65700; '>></span>
+<span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>suite</span><span style='color:#a65700; '>></span>
+</pre>
