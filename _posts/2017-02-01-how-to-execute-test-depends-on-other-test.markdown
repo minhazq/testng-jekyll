@@ -31,3 +31,6 @@ Here is the example for Methods dependency with the same or inherited class.
 		
 <span style='color:#800080; '>}</span>
 </pre>
+
+Here is the example if the methods exist in different class. Assume i have declared groups in the xml like this:
+
