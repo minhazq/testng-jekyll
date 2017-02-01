@@ -49,5 +49,21 @@ I have declared 2 groups and 1 no group( or default). Now how to run them? They 
 	<span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>test</span><span style='color:#a65700; '>></span>
 <span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>suite</span><span style='color:#a65700; '>></span>
 </pre>
+How to include a test method to multiple groups? You just send a group of names as an array to the @Test notation.
+<pre style='color:#000000;background:#ffffff;'><span style='color:#800000; font-weight:bold; '>package</span><span style='color:#004a43; '> mq</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>demo</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>selenium</span><span style='color:#800080; '>;</span>
+<span style='color:#800000; font-weight:bold; '>import</span><span style='color:#004a43; '> org</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>testng</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>annotations</span><span style='color:#808030; '>.</span><span style='color:#004a43; '>Test</span><span style='color:#800080; '>;</span>
 
+<span style='color:#800000; font-weight:bold; '>public</span> <span style='color:#800000; font-weight:bold; '>class</span> AppTest <span style='color:#800000; font-weight:bold; '>extends</span> Scriptbase <span style='color:#800080; '>{</span>
+	
+	<span style='color:#808030; '>@</span>Test<span style='color:#808030; '>(</span>groups<span style='color:#808030; '>=</span><span style='color:#800080; '>{</span><span style='color:#0000e6; '>"qa"</span><span style='color:#808030; '>,</span><span style='color:#0000e6; '>"prod"</span><span style='color:#808030; '>,</span><span style='color:#0000e6; '>"staging"</span><span style='color:#808030; '>,</span><span style='color:#0000e6; '>"dev"</span><span style='color:#800080; '>}</span><span style='color:#808030; '>)</span>
+	<span style='color:#800000; font-weight:bold; '>public</span> <span style='color:#bb7977; '>void</span> m1<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#800080; '>{</span>
+		<span style='color:#bb7977; font-weight:bold; '>System</span><span style='color:#808030; '>.</span>out<span style='color:#808030; '>.</span>println<span style='color:#808030; '>(</span><span style='color:#0000e6; '>"This is qa prod staging dev"</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+	<span style='color:#800080; '>}</span>
 
+	<span style='color:#808030; '>@</span>Test
+	<span style='color:#800000; font-weight:bold; '>public</span> <span style='color:#bb7977; '>void</span> m3<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#800080; '>{</span>
+		<span style='color:#bb7977; font-weight:bold; '>System</span><span style='color:#808030; '>.</span>out<span style='color:#808030; '>.</span>println<span style='color:#808030; '>(</span><span style='color:#0000e6; '>"This is no group"</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+	<span style='color:#800080; '>}</span>
+		
+<span style='color:#800080; '>}</span>
+</pre>
