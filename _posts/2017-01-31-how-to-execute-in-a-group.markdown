@@ -122,3 +122,4 @@ How to Exclude a group? As you imagine simply instead of include tag add "exclud
 <span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>test</span><span style='color:#a65700; '>></span>
 <span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>suite</span><span style='color:#a65700; '>></span>
 </pre>
+How to use **Regular Expression** ? Verify verify simple. Inside the include or exclude name attribute you do just **.*** 
