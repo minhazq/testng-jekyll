@@ -61,3 +61,5 @@ And in the Scripts i wrote like this:
 			
 <span style='color:#800080; '>}</span>
 </pre>
+
+How to do with Regular expression. Based on the book they said in **dependesOnGroups** attribute you add **.***. I will try to see if it works in methods dependency or not.
