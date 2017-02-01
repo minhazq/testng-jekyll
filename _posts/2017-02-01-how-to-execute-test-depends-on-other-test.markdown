@@ -63,3 +63,5 @@ And in the Scripts i wrote like this:
 </pre>
 
 How to do with Regular expression. Based on the book they said in **dependesOnGroups** attribute you add **.***. I will try to see if it works in methods dependency or not.
+<p> Now lets focus on XML based dependency.</p>
+** <u>XML Based Dependency</u>**
