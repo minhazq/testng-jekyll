@@ -139,3 +139,4 @@ How to use **Regular Expression** ? Verify verify simple. Inside the include or 
 <span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>test</span><span style='color:#a65700; '>></span>
 <span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>suite</span><span style='color:#a65700; '>></span>
 </pre> 
+Now how to do Group of groups? It is also called **MetaGroups**. In order to make MetaGroup you have nothing to do in Script level. You have to do in XML level. The idea is you create a tag called **define** right inside of groups tag which is exists inside of test tag. Insdie of 
