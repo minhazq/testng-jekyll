@@ -65,3 +65,22 @@ And in the Scripts i wrote like this:
 How to do with Regular expression. Based on the book they said in **dependesOnGroups** attribute you add **.***. I will try to see if it works in methods dependency or not.
 <p> Now lets focus on XML based dependency.</p>
 ** <u>XML Based Dependency</u>**
+You have to use "dependencies" tag right inside of "groups tag. As you see from xml you can not do method-level dependency. You have to do groups level dependency. Here is the example:
+<pre style='color:#000000;background:#ffffff;'><span style='color:#004a43; '>&lt;!</span><span style='color:#800000; font-weight:bold; '>DOCTYPE</span> <span style='color:#bb7977; font-weight:bold; '>suite</span> <span style='color:#004a43; '>SYSTEM</span> <span style='color:#800000; '>"</span><span style='color:#666616; '>http</span><span style='color:#800080; '>:</span><span style='color:#800000; font-weight:bold; '>//</span><span style='color:#5555dd; '>testng.org</span><span style='color:#40015a; '>/testng-1.0.dtd</span><span style='color:#800000; '>"</span><span style='color:#004a43; '>></span>
+<span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>suite</span> <span style='color:#274796; '>name</span> <span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>My sutie</span><span style='color:#800000; '>"</span>  <span style='color:#a65700; '>></span>
+
+<span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>test</span> <span style='color:#274796; '>name</span> <span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>My Test1</span><span style='color:#800000; '>"</span> <span style='color:#a65700; '>></span>
+	<span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>groups</span><span style='color:#a65700; '>></span>
+		<span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>dependencies</span><span style='color:#a65700; '>></span>
+			<span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>group</span> <span style='color:#274796; '>name</span><span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>depended-groups</span><span style='color:#800000; '>"</span> <span style='color:#274796; '>depends-on</span><span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>qa-group</span><span style='color:#800000; '>"</span><span style='color:#a65700; '>/></span>
+		<span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>dependencies</span><span style='color:#a65700; '>></span>
+		<span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>run</span><span style='color:#a65700; '>></span>
+			<span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>include</span> <span style='color:#274796; '>name</span><span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>depended-groups</span><span style='color:#800000; '>"</span><span style='color:#a65700; '>/></span>
+		<span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>run</span><span style='color:#a65700; '>></span>
+	<span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>groups</span><span style='color:#a65700; '>></span>
+ <span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>classes</span><span style='color:#a65700; '>></span>
+	<span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>class</span> <span style='color:#274796; '>name</span><span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>mq.demo.selenium.AppTest</span><span style='color:#800000; '>"</span><span style='color:#a65700; '>/></span>
+ <span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>classes</span><span style='color:#a65700; '>></span>
+<span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>test</span><span style='color:#a65700; '>></span>
+<span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>suite</span><span style='color:#a65700; '>></span>
+</pre>
