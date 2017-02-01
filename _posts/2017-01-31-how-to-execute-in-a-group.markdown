@@ -139,4 +139,33 @@ How to use **Regular Expression** ? Verify verify simple. Inside the include or 
 <span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>test</span><span style='color:#a65700; '>></span>
 <span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>suite</span><span style='color:#a65700; '>></span>
 </pre> 
-Now how to do Group of groups? It is also called **MetaGroups**. In order to make MetaGroup you have nothing to do in Script level. You have to do in XML level. The idea is you create a tag called **define** right inside of groups tag which is exists inside of test tag. Insdie of 
+Now how to do Group of groups? It is also called **MetaGroups**. In order to make MetaGroup you have nothing to do in Script level. You have to do in XML level. The idea is you create a tag called **define** right inside of groups tag which is exists inside of test tag. Inside of define you include tag and name attribute for the group name. The define tag will have an attribute called name and you can give a name to that define. So whenever you call that define it will execute that group of tests. Now how to run that group? you simply give that group name in run tag. Here is the example:
+<pre style='color:#000000;background:#ffffff;'><span style='color:#004a43; '>&lt;!</span><span style='color:#800000; font-weight:bold; '>DOCTYPE</span> <span style='color:#bb7977; font-weight:bold; '>suite</span> <span style='color:#004a43; '>SYSTEM</span> <span style='color:#800000; '>"</span><span style='color:#666616; '>http</span><span style='color:#800080; '>:</span><span style='color:#800000; font-weight:bold; '>//</span><span style='color:#5555dd; '>testng.org</span><span style='color:#40015a; '>/testng-1.0.dtd</span><span style='color:#800000; '>"</span><span style='color:#004a43; '>></span>
+<span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>suite</span> <span style='color:#274796; '>name</span> <span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>My sutie</span><span style='color:#800000; '>"</span>  <span style='color:#a65700; '>></span>
+
+<span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>test</span> <span style='color:#274796; '>name</span> <span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>My Test1</span><span style='color:#800000; '>"</span> <span style='color:#a65700; '>></span>
+	
+	<span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>groups</span><span style='color:#a65700; '>></span>
+	
+		
+	<span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>define</span> <span style='color:#274796; '>name</span><span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>qa-group</span><span style='color:#800000; '>"</span><span style='color:#a65700; '>></span>
+		<span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>include</span> <span style='color:#274796; '>name</span><span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>mq.demo.selenium.AppTest</span><span style='color:#800000; '>"</span><span style='color:#a65700; '>/></span>
+	<span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>define</span><span style='color:#a65700; '>></span>
+	
+	<span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>define</span> <span style='color:#274796; '>name</span><span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>qa-exclude-group</span><span style='color:#800000; '>"</span><span style='color:#a65700; '>></span>
+		<span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>include</span> <span style='color:#274796; '>name</span><span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>mq.demo.selenium.AppTest1</span><span style='color:#800000; '>"</span><span style='color:#a65700; '>/></span>
+	<span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>define</span><span style='color:#a65700; '>></span>
+	
+		<span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>run</span><span style='color:#a65700; '>></span>
+			<span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>include</span> <span style='color:#274796; '>name</span><span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>qa-group</span><span style='color:#800000; '>"</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>include</span><span style='color:#a65700; '>></span>
+			<span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>exclude</span> <span style='color:#274796; '>name</span><span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>qa-exclude-qroup</span><span style='color:#800000; '>"</span><span style='color:#a65700; '>></span><span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>exclude</span><span style='color:#a65700; '>></span>
+		<span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>run</span><span style='color:#a65700; '>></span>
+		
+	<span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>groups</span><span style='color:#a65700; '>></span>
+	
+ <span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>classes</span><span style='color:#a65700; '>></span>
+	<span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>class</span> <span style='color:#274796; '>name</span><span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>mq.demo.selenium.AppTest</span><span style='color:#800000; '>"</span><span style='color:#a65700; '>/></span>
+ <span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>classes</span><span style='color:#a65700; '>></span>
+<span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>test</span><span style='color:#a65700; '>></span>
+<span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>suite</span><span style='color:#a65700; '>></span>
+</pre> 
